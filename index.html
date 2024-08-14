@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Aniversário do Lê</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Página Inicial -->
+        <div id="start-container" class="start-container">
+            <h1>Esse é o Quiz de Aniversário do Lê!</h1>
+            <p>Este quiz foi criado especialmente para você Lê, quero ver se você consegue acertar de quem são as mensagens.</p> 
+            <p>Espero que você se divirta!</p>
+            <button id="start-btn" class="start-btn" onclick="startQuiz()">Iniciar</button>
+        </div>
+
+        <!-- Quiz -->
+        <div id="quiz-container" class="quiz-container hidden">
+            <h1>Quiz de Aniversário do Lê</h1>
+            <div id="question-container">
+                <p id="question"></p>
+                <div class="answer-buttons">
+                    <button class="btn" onclick="selectAnswer(0)"></button>
+                    <button class="btn" onclick="selectAnswer(1)"></button>
+                    <button class="btn" onclick="selectAnswer(2)"></button>
+                </div>
+            </div>
+            <button id="next-btn" class="next-btn" onclick="nextQuestion()">Próxima Pergunta</button>
+            <p id="feedback"></p>
+        </div>
+
+        <!-- Página de Resultados -->
+        <div id="result-container" class="result-container hidden">
+            <h1>Você acertou <span id="score"></span> de 8 perguntas!</h1>
+            <button id="restart-btn" class="start-btn" onclick="restartQuiz()">Reiniciar</button>
+    
+            <div class="final-message">
+                <div class="message-content">
+                    <img src="leandro.png" alt="Leandro" class="photo-leandro">
+                    <div class="text-message">
+                        <p>Lêee, que alegria te desejar parabéns nesse dia. Desejo que seja um ano com muitas coisas boas, e principalmente com você bem mais pertinho de mim rs. Feliz aniversário!</p>
+                        <p>Beijo da Thi - 14/08/2024</p>
+                    </div>
+                </div>
+                <img src="https://img1.picmix.com/output/stamp/normal/1/4/6/6/276641_f4945.gif" alt="Parabéns" class="gif-parabens">
+            </div>
+
+            <!-- Botão para o PDF -->
+            <a href="https://drive.google.com/file/d/1yC9lQAzNjUqQCLJ0PiwN4j-Awzc3P5tg/view?usp=sharing" target="_blank" class="pdf-button">
+                Click aqui para ter essas mensagens em PDF
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

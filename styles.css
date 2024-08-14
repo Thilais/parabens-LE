@@ -1,0 +1,124 @@
+body {
+    background-image: url('https://img.freepik.com/fotos-premium/papel-de-parede-de-alta-resolucao-retro-de-8-bits-do-console-super-mario-para-fas-de-jogos-antigos_820074-238.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722988800&semt=ais_hybrid');
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.quiz-container, .start-container, .result-container {
+    background-color: #ffebcd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Ajusta a largura do box */
+    min-height: 300px; /* Define uma altura mínima para o box */
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #ff6347;
+}
+
+.answer-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    background-color: #ffa07a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+.next-btn, .start-btn {
+    background-color: #20b2aa;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover, .start-btn:hover {
+    background-color: #008080;
+}
+
+#feedback {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.final-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.photo-leandro {
+    width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.text-message {
+    max-width: 400px; /* Ajuste conforme necessário */
+    text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.gif-parabens {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.pdf-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #20b2aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-button:hover {
+    background-color: #008080;
+}
